@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Special Moments</title>
+    <style>
+        body {
+            background-image: url("bg.png");
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        img {
+            width: 300px;
+            height: 450px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1); /* Add a zoom effect on hover */
+        }
+
+        .image {
+            position: relative;
+            margin-top: 20px;
+        }
+
+        .text {
+            margin-top: 20px; /* Add margin-top to position the text below the image */
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            max-width: 80%;
+        }
+
+        .text p {
+            color: blanchedalmond;
+            font-size: 18px;
+            line-height: 1.5;
+            margin-top: 20px;
+        }
+
+        .text p:first-child {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: black;
+        }
+
+        h1 {
+            color: white;
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Special Moments</h1>
+        <div class="image">
+            <img src="9.jpg" alt="Image">
+        </div>
+        <div class="text">
+            <p><em>Baby, your smile in this photo is the prettiest ever.</em> I'll never forget how happy I was to kiss and embrace you. I simply had the feeling of being at one of my happiest moments.</p>
+        </div>
+    </div>
+</body>
+</html>

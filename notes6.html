@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Special Moments</title>
+    <style>
+        body {
+            background-image: url("bg.png");
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        img {
+            width: 300px;
+            height: 450px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .image {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .image img:not(:first-child) {
+            margin-left: 20px;
+        }
+
+        .text {
+            font-size: 18px;
+            padding: 15px;
+            text-align: left;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            margin-top: 30px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        p {
+            color: #333;
+            font-size: 18px;
+            line-height: 1.5;
+            margin-top: 20px;
+        }
+
+        h1 {
+            color: white;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        img:hover {
+            transform: scale(1.1); /* Add a zoom effect on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Special Moments</h1>
+        <div class="image">
+            <img src="11.jpg" alt="Image 1">
+            <img src="12.jpg" alt="Image 2">
+        </div>
+        <div class="text">
+            <p><b>This picture was taken during the courtship stage before we started dating. It was a special moment when I got emotional in front of you while you weren't feeling well. All I wanted was to see you happy and make you feel better.</b></p>
+        </div>
+    </div>
+</body>
+</html>
