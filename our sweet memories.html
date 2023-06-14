@@ -150,7 +150,7 @@
   
   <section id="music">
     <audio id="background-audio" loop>
-      <audio src="new song.mp3" autoplay loop></audio>
+      <audio id="myAudio" src="new song.mp3" autoplay loop></audio>
     </audio>
   </section>
 
@@ -212,6 +212,34 @@
       const isAudioPlaying = !backgroundAudio.paused;
       sessionStorage.setItem('isAudioPlaying', isAudioPlaying);
     });
+  </script>
+
+  <script>
+    // Check if the Page Visibility API is supported
+if (typeof document.hidden !== "undefined") {
+  var hidden = "hidden";
+  var visibilityChange = "visibilitychange";
+} else if (typeof document.msHidden !== "undefined") {
+  var hidden = "msHidden";
+  var visibilityChange = "msvisibilitychange";
+} else if (typeof document.webkitHidden !== "undefined") {
+  var hidden = "webkitHidden";
+  var visibilityChange = "webkitvisibilitychange";
+}
+
+var audio = document.getElementById("myAudio");
+
+// Pause or play audio based on tab visibility
+function handleVisibilityChange() {
+  if (document[hidden]) {
+    audio.pause();
+  } else {
+    audio.play();
+  }
+}
+
+// Add the visibility change event listener
+document.addEventListener(visibilityChange, handleVisibilityChange, false);
   </script>
   <script src="script.js"></script>
 </body>
